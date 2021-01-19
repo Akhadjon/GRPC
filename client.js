@@ -17,7 +17,7 @@ client.createTodo({
     console.log("Received from server"+JSON.stringify(response))
 })
 
-
+/*
 client.readTodos({},(error, response)=>{
     console.log("Received from server"+JSON.stringify(response))
     if(!response.items){
@@ -25,6 +25,8 @@ client.readTodos({},(error, response)=>{
     }
         
 })
+
+*/
 
 const call = client.readTodosSteam()
 call.on("data", item=>{
